@@ -4,34 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jhon Fernando Ramirez — Enlaces Oficiales</title>
-  <meta name="description" content="Encuentra aquí todas las redes sociales y enlaces oficiales de Jhon Fernando Ramirez." />
-  <meta name="theme-color" content="#0b1220" />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Jhon Fernando Ramirez — Enlaces Oficiales" />
-  <meta property="og:description" content="Encuentra aquí todas las redes sociales y enlaces oficiales de Jhon Fernando Ramirez." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="avatar.jpg" />
-  <meta property="og:url" content="https://tudominio.com" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Jhon Fernando Ramirez — Enlaces Oficiales" />
-  <meta name="twitter:description" content="Encuentra aquí todas las redes sociales y enlaces oficiales de Jhon Fernando Ramirez." />
-  <meta name="twitter:image" content="avatar.jpg" />
 
   <style>
     :root{
-      --bg: #0b1220;           /* fondo */
-      --bg-soft: #0f172a;      /* tarjeta */
-      --txt: #e5e7eb;          /* texto principal */
-      --txt-dim: #9ca3af;      /* texto tenue */
-      --brand: #60a5fa;        /* acento */
-      --brand-2: #a78bfa;      /* acento 2 */
-      --ring: 0 0 0 3px rgba(96,165,250,.25);
+      --bg: #0b1220;
+      --bg-soft: #0f172a;
+      --txt: #e5e7eb;
+      --txt-dim: #9ca3af;
+      --brand: #60a5fa;
+      --brand-2: #a78bfa;
     }
     *{box-sizing:border-box}
-    html,body{height:100%}
     body{
-      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      margin:0; font-family: Inter, system-ui;
       background: radial-gradient(1000px 600px at 20% -20%, rgba(96,165,250,.18), transparent 60%),
                   radial-gradient(1000px 600px at 120% 20%, rgba(167,139,250,.18), transparent 60%),
                   var(--bg);
@@ -39,72 +24,96 @@
       display:flex; align-items:center; justify-content:center; padding:32px;
     }
     .card{
-      width:100%; max-width:720px; background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      backdrop-filter:saturate(120%) blur(12px);
-      border:1px solid rgba(255,255,255,.08);
-      border-radius:24px; padding:28px; position:relative; overflow:hidden;
+      width:100%; max-width:720px;
+      background:rgba(255,255,255,.04);
+      backdrop-filter:blur(12px);
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:24px; padding:28px; position:relative;
       box-shadow: 0 20px 50px rgba(0,0,0,.35);
     }
-    .glow{ position:absolute; inset:auto -20% -40% -20%; height:200px; background: radial-gradient(60% 60% at 50% 50%, rgba(96,165,250,.15), transparent 70%)}
-    header{ display:flex; gap:20px; align-items:center; }
-    .avatar{
-      width:96px; height:96px; border-radius:24px; overflow:hidden; flex:0 0 auto;
+
+    /* --- HEADER: DOS IMÁGENES --- */
+    header{display:flex; gap:20px; align-items:center;}
+
+    .double-avatar{
+      display:flex;
+      flex-direction:row;
+      gap:14px;
+    }
+    .avatar-item{
+      width:96px; height:96px;
+      border-radius:24px;
+      overflow:hidden;
       border:1px solid rgba(255,255,255,.12);
-      background:#111; display:grid; place-items:center;
+      background:#111;
+      box-shadow:0 4px 20px rgba(0,0,0,.25);
     }
-    .avatar img{width:100%; height:100%; object-fit:cover; display:block}
-    .hgroup{display:flex; flex-direction:column; gap:8px}
-    h1{font-size:28px; line-height:1.15; margin:0}
-    .role{font-size:14px; color:var(--brand); font-weight:600; letter-spacing:.2px}
-    .bio{color:var(--txt-dim); font-size:15px; margin:0}
+    .avatar-item img{
+      width:100%; height:100%; object-fit:cover;
+    }
 
-    .links{ display:grid; grid-template-columns:1fr; gap:12px; margin:24px 0 }
+    h1{margin:8px 0 0; font-size:28px;}
+    .role{font-size:14px; color:var(--brand); font-weight:600;}
+    .bio{color:var(--txt-dim); margin:6px 0 0;}
+
+    .row{ display:flex; gap:10px; flex-wrap:wrap; margin-top:10px }
+    .pill{
+      padding:6px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.15);
+      color:var(--txt-dim); font-size:12px;
+    }
+
+    /* --- LINKS --- */
+    .links{ display:grid; gap:12px; margin:28px 0; }
+
     .link{
-      display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px 16px; border-radius:16px;
-      background: rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.06);
+      display:flex; justify-content:space-between; align-items:center;
+      padding:14px 16px; border-radius:16px;
+      background:rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.06);
       text-decoration:none; color:var(--txt);
-      transition: transform .15s ease, border-color .15s ease, background .15s ease;
+      transition:all .15s ease;
     }
-    .link:hover{ transform: translateY(-2px); border-color: rgba(96,165,250,.35); background:rgba(96,165,250,.08)}
-    .link .left{display:flex; align-items:center; gap:12px}
-    .chip{ font-size:13px; padding:6px 10px; border-radius:999px; color:#0b1220; font-weight:700;
-      background: linear-gradient(90deg, var(--brand), var(--brand-2));
+    .link:hover{
+      transform:translateY(-2px);
+      border-color:rgba(96,165,250,.4);
+      background:rgba(96,165,250,.08);
     }
-    .handle{ color:var(--txt-dim); font-size:14px }
-    .sublabel{ display:block; font-size:12px; color:var(--txt-dim)}
 
-    .row{ display:flex; gap:12px; flex-wrap:wrap }
-    .pill{ padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.1); color:var(--txt-dim); font-size:12px }
+    .left{display:flex; align-items:center; gap:12px;}
+    .icon{width:22px; height:22px; opacity:.9; filter:brightness(0) invert(1);}
+    .sublabel{display:block; font-size:12px; color:var(--txt-dim);}
+    .handle{font-size:14px; color:var(--txt-dim);}
 
-    footer{ display:flex; justify-content:space-between; align-items:center; gap:12px; margin-top:8px; color:var(--txt-dim) }
+    footer{ color:var(--txt-dim); font-size:14px; display:flex; justify-content:space-between; }
 
-    .toggle{ position:absolute; top:16px; right:16px; display:flex; align-items:center; gap:8px; font-size:13px; color:var(--txt-dim)}
-    .switch{ appearance:none; width:46px; height:28px; border-radius:999px; background:#111827; border:1px solid rgba(255,255,255,.12); position:relative; cursor:pointer; }
-    .switch:before{ content:""; position:absolute; top:3px; left:3px; width:22px; height:22px; background:#fff; border-radius:50%; transition:left .15s ease }
-    .switch:checked{ background:#e5e7eb }
-    .switch:checked:before{ left:21px }
-
-    @media (max-width:600px){
-      header{ align-items:flex-start }
+    /* --- RESPONSIVE --- */
+    @media(max-width:600px){
+      header{flex-direction:column; align-items:flex-start;}
+      .double-avatar{width:100%; justify-content:center;}
     }
   </style>
 </head>
+
 <body>
   <main class="card">
-    <div class="toggle" aria-label="Cambiar tema">
-      <label for="themeSwitch">Claro</label>
-      <input id="themeSwitch" class="switch" type="checkbox" aria-label="Cambiar entre tema claro y oscuro">
-    </div>
 
+    <!-- HEADER con dos fotos -->
     <header>
-      <div class="avatar" aria-hidden="true">
-        <!-- Reemplaza avatar.jpg por la foto oficial -->
-        <img src="avatar.jpg" alt="Foto de perfil de Jhon Fernando Ramirez" />
+      <div class="double-avatar">
+        <div class="avatar-item">
+          <img src="avatar1.jpg" alt="Foto de perfil de Jhon Fernando Ramirez">
+        </div>
+        <div class="avatar-item">
+          <img src="avatar2.jpg" alt="Jhon Fernando Ramirez en actividad pública">
+        </div>
       </div>
+
       <div>
         <div class="role">@jhonfernandoramirez • Perfil oficial</div>
         <h1>Jhon Fernando Ramirez</h1>
         <p class="bio">Aquí encuentras mis enlaces oficiales y redes sociales. ¡Conéctate conmigo! 👇</p>
+
         <div class="row">
           <span class="pill">Bogotá, Colombia</span>
           <span class="pill">Colaboraciones abiertas</span>
@@ -113,129 +122,51 @@
       </div>
     </header>
 
-    <section class="links" aria-label="Enlaces a redes sociales">
+    <!-- LINKS CON ICONOS SVG -->
+    <section class="links">
+
       <!-- Instagram -->
-      <a class="link" href="https://www.instagram.com/fernandorevoluciona/" target="_blank" rel="noopener" aria-label="Abrir Instagram oficial">
+      <a class="link" href="https://www.instagram.com/fernandorevoluciona/" target="_blank">
         <div class="left">
-          <span class="chip">📸 Instagram</span>
-          <span>Perfil principal <span class="sublabel">Noticias y contenido diario</span></span>
-        </div>
-        <span class="handle">@USUARIO_INSTAGRAM</span>
-      </a>
-
-      <!-- Facebook -->
-      <a class="link" href="https://web.facebook.com/profile.php?id=100089939859123" target="_blank" rel="noopener" aria-label="Abrir página de Facebook oficial">
-        <div class="left">
-          <span class="chip">📘 Facebook</span>
-          <span>Página oficial <span class="sublabel">Eventos y transmisiones</span></span>
-        </div>
-        <span class="handle">@USUARIO_FACEBOOK</span>
-      </a>
-
-      <!-- TikTok -->
-      <a class="link" href="https://www.tiktok.com/@fernandorevoluciona" target="_blank" rel="noopener" aria-label="Abrir TikTok oficial">
-        <div class="left">
-          <span class="chip">🎵 TikTok</span>
-          <span>Clips y tendencias</span>
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 2A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5zm4.8-3.3a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2z"/></svg>
+          <span>Instagram <span class="sublabel">Contenido diario</span></span>
         </div>
         <span class="handle">@fernandorevoluciona</span>
       </a>
 
-      <!-- X (Twitter) -->
-      <a class="link" href="https://x.com/USUARIO_X" target="_blank" rel="noopener" aria-label="Abrir perfil en X">
+      <!-- Facebook -->
+      <a class="link" href="https://web.facebook.com/profile.php?id=100089939859123" target="_blank">
         <div class="left">
-          <span class="chip">𝕏 X</span>
-          <span>Opinión y actualidad</span>
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2v1.8h2.7l-.4 3h-2.3v7A10 10 0 0 0 22 12"/></svg>
+          <span>Facebook <span class="sublabel">Eventos y transmisiones</span></span>
         </div>
-        <span class="handle">@USUARIO_X</span>
+        <span class="handle">Página oficial</span>
       </a>
 
-      <!-- YouTube -->
-      <a class="link" href="https://www.youtube.com/@USUARIO_YOUTUBE" target="_blank" rel="noopener" aria-label="Abrir canal de YouTube">
+      <!-- TikTok -->
+      <a class="link" href="https://www.tiktok.com/@fernandorevoluciona" target="_blank">
         <div class="left">
-          <span class="chip">▶️ YouTube</span>
-          <span>Videos y documentales</span>
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.5 2h2.8c.2 1.7 1.6 3.1 3.3 3.3v2.8c-1.4 0-2.7-.4-3.8-1v7.3a5.8 5.8 0 1 1-5.8-5.8c.4 0 .7 0 1 .1v3a2.7 2.7 0 1 0 2 2.6V2z"/></svg>
+          <span>TikTok <span class="sublabel">Clips y tendencias</span></span>
         </div>
-        <span class="handle">@USUARIO_YOUTUBE</span>
+        <span class="handle">@fernandorevoluciona</span>
       </a>
 
-      <!-- Sitio web -->
-      <a class="link" href="https://tudominio.com" target="_blank" rel="noopener" aria-label="Abrir sitio web oficial">
-        <div class="left">
-          <span class="chip">🌐 Web</span>
-          <span>Portal oficial</span>
-        </div>
-        <span class="handle">tudominio.com</span>
-      </a>
+      
 
-      <!-- Correo -->
-      <a class="link" href="mailto:contacto@tudominio.com" aria-label="Enviar correo">
-        <div class="left">
-          <span class="chip">✉️ Correo</span>
-          <span>Consultas y prensa</span>
-        </div>
-        <span class="handle">contacto@tudominio.com</span>
-      </a>
     </section>
 
     <footer>
-      <span>© <span id="year"></span> Jhon Fernando Ramirez. Todos los derechos reservados.</span>
-      <span class="txt-muted">Hecho con ♥</span>
+      <span>© <span id="year"></span> Jhon Fernando Ramirez</span>
+      <span>Hecho con ♥</span>
     </footer>
 
-    <div class="glow" aria-hidden="true"></div>
   </main>
 
-  <script>
-    // Año dinámico
-    document.getElementById('year').textContent = new Date().getFullYear();
+<script>
+  // Año dinámico
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
-    // Modo claro/oscuro con localStorage
-    const switchEl = document.getElementById('themeSwitch');
-    const LS_KEY = 'links-theme';
-    const setTheme = (mode) => {
-      if (mode === 'light') {
-        document.documentElement.style.setProperty('--bg', '#f8fafc');
-        document.documentElement.style.setProperty('--bg-soft', '#ffffff');
-        document.documentElement.style.setProperty('--txt', '#0b1220');
-        document.documentElement.style.setProperty('--txt-dim', '#475569');
-      } else {
-        document.documentElement.style.setProperty('--bg', '#0b1220');
-        document.documentElement.style.setProperty('--bg-soft', '#0f172a');
-        document.documentElement.style.setProperty('--txt', '#e5e7eb');
-        document.documentElement.style.setProperty('--txt-dim', '#9ca3af');
-      }
-    };
-    const saved = localStorage.getItem(LS_KEY);
-    if (saved) { setTheme(saved); switchEl.checked = saved === 'light'; }
-    switchEl.addEventListener('change', (e) => {
-      const mode = e.target.checked ? 'light' : 'dark';
-      setTheme(mode);
-      localStorage.setItem(LS_KEY, mode);
-    });
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Jhon Fernando Ramirez",
-    "image": "https://tudominio.com/avatar.jpg",
-    "url": "https://tudominio.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Bogotá",
-      "addressCountry": "CO"
-    },
-    "email": "mailto:contacto@tudominio.com",
-    "sameAs": [
-      "https://www.instagram.com/USUARIO_INSTAGRAM",
-      "https://www.facebook.com/USUARIO_FACEBOOK",
-      "https://www.tiktok.com/@USUARIO_TIKTOK",
-      "https://x.com/USUARIO_X",
-      "https://www.youtube.com/@USUARIO_YOUTUBE"
-    ]
-  }
-  </script>
 </body>
 </html>
